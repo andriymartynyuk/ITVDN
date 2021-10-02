@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        div {
+            /* default div */
+            width: 100px;
+            height: 100px;
+            float: left;
+        }
+        .myDiv {
+            /* my own div */
+            width: 100px;
+            height: 100px;
+            float: right;
+        }
+
+        /*
+                Попробовать изменить left на right у всех элементов, а затем у одного.
+        */
+        #elem1 {
+            background-color: red;
+            /* clear: left; */
+        }
+
+        #elem2 {
+            background-color: green;
+            /* clear: right; */
+        }
+
+        #elem3 {
+            background-color: blue;
+            clear: right;
+        }
+
+        #elem4 {
+            background-color: gold;
+            /* clear: right; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="elem1">1</div>
+    <div id="elem2">2</div>
+    <div id="elem3">3</div>
+    <div id="elem4">4</div>
+    <div class="myDiv" id="elem1">1</div>
+    <div class="myDiv" id="elem2">2</div>
+    <div class="myDiv" id="elem3">3</div>
+    <div class="myDiv" id="elem4">4</div>
+</body>
+
+</html>
