@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контекст функций</title>
+</head>
+
+<body>
+    <script>
+        let user1 = {
+            login: "admin",
+            email: "admin@example.com",
+
+            // this - контекст функции.
+            // Значение this меняется в зависимости от контекста использования функции
+            // Если функция является методом (находится в объекте) this указывает на объект, которому принадлежит функция
+            // Больше о вариантах использования контекста будет рассмотрено в следующем курсе
+            showContactInfo: function () {
+
+                // this указывает на user1 
+                console.log("Мой логин " + this.login + ", мой email " + this.email);
+                //console.log("Мой логин " + user1.login + ", мой email " + user1.email);
+            }
+        }
+        user1.showContactInfo();
+    </script>
+</body>
+
+</html>

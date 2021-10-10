@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Свойство length</title>
+</head>
+
+<body>
+    <script>
+        let cities = ["London", "Paris", "Berlin", "Rome"];
+        console.log(cities.length); // length - свойство массива, в котором находится количество элементов массива
+
+        cities[4] = "Lisbon"; // при изменении элемента массива, который находится за пределами текущей длины массива, происходит автоматическое обновление свойства length
+        console.log(cities.length); // длина массива увеличилась на 1
+
+        cities[10] = "Madrid";
+        console.log(cities.length); // теперь длина массива 11, так как индекс последнего элемента массива 10
+
+        cities.length = 2; // установив lenth меньше размера массива, мы удалили элементы, выходящие за пределы нового размера массива
+        console.log(cities);
+    </script>
+</body>
+
+</html>

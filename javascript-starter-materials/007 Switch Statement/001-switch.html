@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+    <script>
+        // switch - условная конструкция, заменяющая несколько конструкций if
+        // Эта конструкция позволяет выполнить блок кода после выполнения точного сравнения результата выражения с несколькими вариантами
+
+        // switch (ВЫРАЖЕНИЕ)
+        // {
+        //     case ЗНАЧЕНИЕ_1:
+        //         // инструкции, когда ВЫРАЖЕНИЕ == ЗНАЧЕНИЕ_1
+        //         break;
+        //     case ЗНАЧЕНИЕ_2:
+        //         // инструкции, когда ВЫРАЖЕНИЕ == ЗНАЧЕНИЕ_2
+        //         break;
+        //     default:
+        //         // инструкции для всех остальных результатов
+        //         break;
+        // }
+
+        let dayNumber = prompt("Введите номер дня недели:");
+
+        switch (dayNumber) {
+            case "1":
+                alert("Понедельник");
+                break;
+            case "2":
+                alert("Вторник");
+                break;
+            case "3":
+                alert("Среда");
+                break;
+            case "4":
+                alert("Четверг");
+                break;
+            case "5":
+                alert("Пятница");
+                break;
+            case "6":
+                alert("Суббота");
+                break;
+            case "7":
+                alert("Воскресенье");
+                break;
+            default:
+                alert("Введено неправильное значение");
+                break;
+
+        }
+    </script>
+</body>
+
+</html>

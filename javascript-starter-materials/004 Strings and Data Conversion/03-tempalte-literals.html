@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шаблонные строки</title>
+</head>
+
+<body>
+    <script>
+        let items = 3;
+        let totalPrice = 230;
+
+        // конкатенация
+        let message1 = "Товаров в корзине - " + items + ". Общая стоимость " + totalPrice + " $.";
+        console.log(message1);
+
+        // использование шаблонных строк (template literal)
+        // для создания шаблонной строки используются обратные кавычки (`) вместо одинарных (') или двойных (")
+        // в шаблонную строку можно внедрить значение с помощью ${значение}
+        let message2 = `Товаров в корзине - ${items}. Общая стоимость ${totalPrice}$.`;
+        let message3 = `Товаров в корзине - ${items}. Общая стоимость ${totalPrice}$.`;
+
+        let x = 10;
+        let y = 20;
+        let sum = x + y;
+        console.log(`Сумма двух чисел ${x} и ${y} равна ${sum}`);
+
+    </script>
+</body>
+
+</html>

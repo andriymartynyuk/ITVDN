@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript 5 Arrays methods</title>
+</head>
+
+<body>
+    <script>
+        // forEach - обход всех элементов массива и запуск определенной функции для каждого элемента
+        var data = [1, 2, 3, 4, 5];
+        var sum = 0;
+
+        // получение суммы всех элементов
+        data.forEach(function (value) {
+            sum += value;
+        });
+        // data.forEach(value => sum += value); // аналогичный код с использованием стрелочной функции
+        console.log(sum);
+
+        // filter - возвращает новый массив, состоящий из элементов, отобранных функцией.
+        var data1 = [1, 2, 3, 4, 5, 6];
+
+        var data2 = data1.filter(function (value) {
+            return value % 2 == 0;
+        })
+        // var data2 = data1.filter(value => value % 2 == 0); // аналогичный код с использованием стрелочной функции
+
+        console.log(data1); // все значения
+        console.log(data2); // только четные значения
+
+        // map - обходит все элементы массива и возвращает новый массив со значениями, которые вернула указанная функция
+
+        var data3 = [1, 2, 3, 4, 5];
+
+        var data4 = data3.map(function (value) {
+            return value * value;
+        });
+        // var data4 = data3.map(value => value * value);  // аналогичный код с использованием стрелочной функции
+
+        console.log(data3); // исходные значения
+        console.log(data4); // исходные значения, возведенные во вторую степень
+
+        // цепочка вызовов и стрелочные функции для максимально компактного кода
+        data1
+            .filter(value => value % 2 == 0)        // фильтрация массива
+            .forEach(value => console.log(value));  // вывод элементов
+    </script>
+</body>
+
+</html>

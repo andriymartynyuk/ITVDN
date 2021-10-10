@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice</title>
+</head>
+
+<body>
+    <script>
+        let cities = ["London", "Paris", "Italy", "Berlin", "Rome"];
+        // начиная с индекса 2 удалить 1 элемент и заменить на три значения 
+        cities.splice(2, 1, "[Madrid]", "[Budapest]", "[Lisbon]");
+        for (const city of cities) {
+            console.log(city);
+        }
+
+        // Вставка значений без удаления, для этого используется значение 0 в качестве второго параметра 
+        cities.splice(1, 0, "[Athens]", "[Warsaw]");
+        for (const city of cities) {
+            console.log(city);
+        }
+    </script>
+</body>
+
+</html>

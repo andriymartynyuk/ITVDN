@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тернарный оператор</title>
+</head>
+
+<body>
+    <script>
+        // использование условной конструкции
+        let accessMessgae;
+        let age = +prompt("Сколько Вам лет? (использование if)");
+
+        if (age > 18) {
+            accessMessgae = "доступ разрешен";
+        }
+        else {
+            accessMessgae = "нет доступа";
+        }
+
+        alert(accessMessgae);
+
+        // использование тернарного оператора
+        age = +prompt("Сколько Вам лет? (использование тернарного оператора)");
+
+        // переменная = условие ? значение_если_условие_истина : значение_если_условие_ложь
+        accessMessgae = age > 18 ? "доступ разрешен" : "нет доступа";
+        alert(accessMessgae);
+    </script>
+</body>
+
+</html>

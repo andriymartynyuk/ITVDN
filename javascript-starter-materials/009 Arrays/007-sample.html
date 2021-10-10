@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример</title>
+</head>
+
+<body>
+    <script>
+        // хранение названия, цены и количества выбранных продуктов в разных массивах - не оптимальное решение
+        // данный пример демонстрирует использование массивов и удобство их применения для приложений, где есть много однотипных данных
+        // этот код будет оптимизирован в уроке, посвященном работе с объектами 
+
+        // массив с именами продуктов
+        let names = [];
+        names[0] = "Бумага офисная А4, 80 г/м2, 500 л";
+        names[1] = "Биндеры для бумаги 51 мм";
+        names[2] = "Ручка шариковая синяя";
+        names[3] = "Test";
+
+        // массив с ценами продуктов
+        let prices = [];
+        prices[0] = 280.25;
+        prices[1] = 56;
+        prices[2] = 12.50;
+        prices[3] = 10;
+
+        // массив с количеством покупаемых продуктов
+        let products = [];
+
+        // цикл для получения количества покупаемых продуктов
+        for (let index = 0; index < names.length; index++) {
+            const name = names[index];
+            const price = prices[index];
+
+            products[index] = +prompt(`Укажите количество продуктов '${name}', цена ${price}`, 0);
+        }
+
+        // цикл для расчета общей цены купленных продуктов
+        let totalPrice = 0;
+        for (let index = 0; index < products.length; index++) {
+            totalPrice += prices[index] * products[index];
+        }
+
+        alert(`Сумма Вашего заказа ${totalPrice}.`);
+
+        let isFreeShipping = totalPrice > 1000;
+        if (isFreeShipping) // иногда в условии используется только одна переменная
+        {
+            alert("Доставка будет бесплатной.");
+        }
+    </script>
+</body>
+
+</html>

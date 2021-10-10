@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference vs Value</title>
+</head>
+
+<body>
+    <script>
+        // object - reference type
+        // все остальные типы - value type
+        console.log("-------Типы значений-------");
+        let originalNumber = 10;            // в переменной originalNumber хранится значение 10
+        let copyNumber = originalNumber;    // в переменную copyNumber копируется значение из переменной originalNumber
+
+        console.log("До изменения");
+        console.log("originalNumber = " + originalNumber);
+        console.log("copyNumber = " + copyNumber);
+
+        originalNumber = 15;
+        console.log("после изменения");
+        console.log("originalNumber = " + originalNumber);
+        console.log("copyNumber = " + copyNumber);
+
+        console.log("-------Ссылочные типы-------");
+
+        let originalUser = { login: "user", pass: "12345" };  // в переменной originalUser хранится ссылка на объект
+        let copyUser = originalUser;                          // в переменную copyUser копируется ссылка из переменной originalUser на уже существующий объект
+
+        console.log("До изменения");
+        console.log("originalUser.login = " + originalUser.login);
+        console.log("copyUser.login = " + copyUser.login);
+
+        originalUser.login = "admin";
+        console.log("после изменения");
+        console.log("!!! originalUser.login = " + originalUser.login);
+        console.log("!!! copyUser.login = " + copyUser.login);
+
+    </script>
+</body>
+
+</html>

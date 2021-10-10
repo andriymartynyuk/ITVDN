@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преобразование к логическому типу</title>
+</head>
+
+<body>
+    <script>
+        // При преобразовании null, undefined, 0, пустой строки или значения NaN - результат false
+        // Все остальные значения - результат true
+        let value = "test";
+        console.log(typeof value); // string
+
+        let result = Boolean(value);
+        console.log(typeof result); // boolean
+        console.log(result);
+
+        console.log(Boolean(null)); // false
+        console.log(Boolean("")); // false
+        console.log(Boolean(1)); // true
+    </script>
+</body>
+
+</html>

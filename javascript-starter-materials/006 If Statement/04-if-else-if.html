@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if statement</title>
+</head>
+
+<body>
+    <script>
+        let response = prompt("Сколько будет 2 + 3?");
+
+        // Если необходимо выполнить несколько проверок и только одна проверка может быть успешной
+        // можно использовать несколько выражений if ... else if
+        // Блоков else if может быть неограниченное количество
+        if (response < 5) {
+            alert("Правильный ответ больше чем " + response + ".");
+        }
+        else if (response > 5) {
+            alert("Правильный ответ меньше чем " + response + ".");
+        }
+        else {
+            alert("Вы ввели правильный ответ");
+        }
+
+    </script>
+</body>
+
+</html>

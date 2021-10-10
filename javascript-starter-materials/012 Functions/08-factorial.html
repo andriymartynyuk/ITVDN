@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рекурсия</title>
+</head>
+
+<body>
+    <script>
+        // Факториал — функция, определённая на множестве неотрицательных целых чисел.
+        // обозначается n!, произносится "эн факториал". Факториал натурального числа n определяется как произведение всех натуральных чисел от 1 до n включительно:
+        let input = +prompt("Введите число: ");
+
+        function factorial(x) {
+
+            if (x <= 1)
+                return 1;
+
+            return x * factorial(x - 1);
+        }
+
+        let f = factorial(input);
+        console.log(input + "! = " + f);
+
+    </script>
+</body>
+
+</html>

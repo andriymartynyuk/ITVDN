@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Использование индекса</title>
+</head>
+
+<body>
+    <script>
+        // массив - упорядоченная коллекция значений
+        // элемент массива - отдельное значение массива
+        // индекс - числовая позиция элемента массива
+
+        let cities = []; // создание пустого массива
+
+        // отсчет индексов массива начинается с нуля
+        cities[0] = "London"; // присвоение значения по индексу 0
+        cities[1] = "Paris"; // присвоение значения по индексу 1
+        cities[2] = "Berlin"; // присвоение значения по индексу 2
+        cities[3] = "Rome"; // присвоение значения по индексу 3
+
+        // чтение элемента массива по индексу 0
+        let cityName = cities[0];
+        console.log("First array element - " + cityName);
+
+        cities[0] = "LONDON"; // изменение значения элемента массива
+
+        console.log(cities[0]);
+        console.log(cities[1]);
+        console.log(cities[2]);
+        console.log(cities[3]);
+    </script>
+</body>
+
+</html>

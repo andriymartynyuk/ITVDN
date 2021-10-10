@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контекст функций</title>
+</head>
+
+<body>
+    <script>
+        let user1 = {
+            login: "admin",
+            email: "admin@example.com",
+
+            showContactInfo: null
+        }
+
+        let user2 = {
+            login: "user",
+            email: "user@example.com",
+
+            showContactInfo: null
+        }
+
+        function show() {
+            console.log("Мой логин " + this.login + ", мой email " + this.email);
+        }
+
+        // одна и та же функция show используется как значение для свойства showContactInfo объектов user1 и user2
+        user1.showContactInfo = show;
+        user2.showContactInfo = show;
+
+        user1.showContactInfo(); // контекст функции равен user1
+        user2.showContactInfo(); // контекст функции равен user2
+    </script>
+</body>
+
+</html>

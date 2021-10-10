@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поднятие переменных</title>
+</head>
+
+<body>
+    <script>
+        // Поднятие или hoisting — это механизм, который заставляет переменные и объявления функций передвигаться в начало своей области видимости
+        // перед тем, как код будет выполнен.
+        function hoistinTest() {
+            console.log(message); // переменная со значением undefined будет доступна до того, как выполнится инициализация этой переменной.
+            var message = "hello";
+            console.log(message + " world");
+        }
+
+        hoistinTest();
+    </script>
+</body>
+
+</html>

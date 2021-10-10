@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+</head>
+
+<body>
+    <script>
+        // confirm - функция для отображения модального окна с текстом и двумя кнопками - Ok и Cancel
+        // При нажатии на одну из кнопок в модальном окне, окно закрывается и возвращает логическое значение true, если была нажата кнопка OK,  
+        // или значение false - если была нажата кнопка Cancel
+        let confirmed = confirm("Вы точно хотите удалить файл?");
+
+        if (confirmed) // или if(confirmed == true)
+        {
+            alert("Файл удален.");
+        }
+        else {
+            alert("Отмена удаления файла.");
+        }
+    </script>
+</body>
+
+</html>

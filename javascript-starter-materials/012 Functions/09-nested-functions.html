@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вложенные функции</title>
+</head>
+
+<body>
+    <script>
+        // В JS функции могут быть вложенными в другие функции
+        // Данный синтаксис позволяет "прятать" функции и создавать разные шаблоны кодирования.
+        // В будущих уроках, на основе данного синтаксиса, будет рассмотрено замыкание - один из приемов организации кода.
+        function calculate(x1, y1, x2, y2) {
+            // вложенная функция, она не может использоваться за пределами calculate
+            function operation(a, b) {
+                let sum = a + b;
+                return sum;
+            }
+
+            let data = operation(x1, x2) + operation(y1, y2);
+            return data;
+        }
+
+        let result = calculate(1, 2, 3, 4);
+        console.log(result);
+    </script>
+</body>
+
+</html>

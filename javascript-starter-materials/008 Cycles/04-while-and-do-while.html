@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while и do/while</title>
+</head>
+
+<body>
+    <script>
+        // при использовании цикла while может быть ситуация, когда не выполнится ни одна итерация цикла
+        let value1 = +prompt("Введите любое значение больше 5"); // или let value1 = 0;
+        while (value1 <= 5) {
+            value1 = +prompt("Введите любое значение больше 5");
+        }
+        alert("Вы ввели " + value1);
+
+        // при использовании цикла do/while обязательно выполнится первая итерация
+        // такой цикл удобно использовать, когда переменная, которая проверяется в условии, инициализируется в теле цикла
+        let value2;
+        do {
+            value2 = +prompt("Введите любое значение больше 10");
+        }
+        while (value2 <= 10);
+        alert("Вы ввели " + value2);
+    </script>
+</body>
+
+</html>

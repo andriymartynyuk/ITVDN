@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+</head>
+
+<body>
+    <script>
+        // цикл for позволяет запустить цикл на указанное количество итераций
+        // for(начало; условие; операция) { /*тело цикла*/ }
+        // цикл for выполняется до тех пор, пока условие истинно, после каждой итерации происходит выполнение операции и повторная проверка условия
+        for (let i = 0; i < 10; i++) {
+            console.log("iteration #" + i);
+        }
+
+        // цикл for может использовать уже существующую переменную, как, например, переменную x в примере ниже
+        let x = 0;
+        for (x = 0; x < 10; x++) {
+            console.log("(cycle 2) iteration #" + x);
+        }
+    </script>
+</body>
+
+</html>

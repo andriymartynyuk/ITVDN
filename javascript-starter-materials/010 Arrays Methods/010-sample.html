@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+</head>
+
+<body>
+    <script>
+        let emailString = prompt("Введите e-mail адреса через запятую");
+        let emails = emailString.split(", ");
+
+        // удаляем почту "no-reply@itvdn.com", если такая есть в списке
+        let noreplyIndex = emails.indexOf("no-reply@itvdn.com");
+        if (noreplyIndex != -1) {
+            emails.splice(noreplyIndex, 1);
+        }
+
+        // если почты "admin@itvdn.com" нет в массиве - добавляем ее
+        if (emails.indexOf("admin@itvdn.com") == -1) {
+            emails.push("admin@itvdn.com");
+        }
+
+        for (let email of emails) {
+            console.log(`Отправка письма на адрес ${email}`);
+        }
+
+        alert(`Отправлено ${emails.length} писем`);
+
+    </script>
+</body>
+
+</html>

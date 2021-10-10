@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример использования переменных</title>
+</head>
+
+<body>
+    <script>
+        console.log("Вычисление объема цилиндра.");
+        //  V=π * r в квадрате * h
+        let V; // переменная для хранения объема
+        const Pi = 3.1415926535; // константа Пи, смена значения приведет к ошибке
+        let r = 10;
+        let h = 20;
+
+        Pi = 123; // ошибка на этапе выполнения, константу нельзя менять
+
+        V = Pi * r * r * h;
+        console.log(V);
+    </script>
+</body>
+
+</html>

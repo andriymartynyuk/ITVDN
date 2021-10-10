@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined parameter</title>
+</head>
+
+<body>
+    <script>
+        // Если при вызове функции значения для параметра не передавалось, значение параметра будет равно undefined
+        function showMessage(text, repeatCount) {
+            if (repeatCount === undefined) {
+                repeatCount = 1;
+            }
+
+            for (let i = 0; i < repeatCount; i++) {
+                console.log(text);
+            }
+        }
+
+        showMessage("Hello world"); // нет второго значения при вызове, параметр repeatCount = undefined
+        showMessage("Привет мир", 2);
+        showMessage("ABC"); // нет второго значения при вызове, параметр repeatCount = undefined
+    </script>
+</body>
+
+</html>

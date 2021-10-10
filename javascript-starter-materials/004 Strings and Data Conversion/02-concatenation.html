@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конкатенация</title>
+</head>
+
+<body>
+    <script>
+        // конкатенация - операция склеивания строк
+        let msg1 = "hello ";
+        let msg2 = "world";
+        let joined = msg1 + msg2;
+        console.log(joined);
+
+        // числа и строки
+        // при сложении значения типа number и string, значение типа number преобразовывается в строку,
+        // после чего выполняется конкатенация
+        console.log("hello" + 1);
+
+        let x = "10";
+        let y = "20";
+        let sum = x + y; // так как оператор + используется для двух переменных типа string, выполняется конкатенация вместо сложения
+        console.log(sum); // результат 1020, вместо ожидаемого результата 30
+
+        // Пример использования конкатенации
+        // представьте, что пользователю на странице интернет магазина нужно сформировать сообщение на основе количества товаров в корзине и общей стоимости товаров
+        let items = 3;
+        let totalPrice = 230;
+        let message = "Товаров в корзине - " + items + ". Общая стоимость " + totalPrice + " $.";
+
+        console.log(message);
+    </script>
+</body>
+
+</html>

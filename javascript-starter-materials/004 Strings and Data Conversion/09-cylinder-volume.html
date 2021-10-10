@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Объем цилиндра</title>
+</head>
+
+<body>
+    <script>
+        alert("Вычисление объема цилиндра.");
+
+        let volume; // переменная для хранения объема
+
+        let inputRadius = prompt("Введите радиус цилиндра", 0);
+        let inputHeight = prompt("Введите высоту цилиндра", 0);
+
+        let radius = Number(inputRadius);
+        let height = Number(inputHeight);
+
+        // Math.PI - "системная" константа, хранящая число PI
+        volume = Math.PI * radius * radius * height;
+
+        alert(`Объем цилиндра с высотой ${height} и радиусом ${radius} равен ${volume}`);
+    </script>
+</body>
+
+</html>

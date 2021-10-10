@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переменные</title>
+</head>
+
+<body>
+    <script>
+        let message = "Hello world"; // Определение и инициализация переменной (инициализация - присвоение первого значения переменной). 
+        console.log(message);
+
+        message = "Привет мир"; // Смена значения переменной message. Так как мы пользуемся уже созданной переменой, ключевое слово let не используется.
+        //let message = "...";  // Создание переменной c именем, которое ранее использовалось, приведет к ошибке.
+        console.log(message);
+
+        let testMessage = "foo";
+        message = testMessage;  // значение переменной testMessage присваивается переменной message
+        console.log(message);
+    </script>
+</body>
+
+</html>

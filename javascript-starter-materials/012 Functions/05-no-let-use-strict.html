@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global variable</title>
+</head>
+
+<body>
+    <script>
+        //'use strict';
+        let x = 1; // глобальная переменная
+        function test1() {
+            // при создании переменной без ключевого слова let или var, переменная становится глобальной
+            // не работает в строгом режиме 'strict mode'
+            y = 2;
+        }
+
+        function test2() {
+            let z = 3; // локальная переменная
+        }
+
+        function test3() {
+            console.log(x);
+            console.log(y);
+            console.log(z); // ошибка
+        }
+
+        test1();
+        test2();
+        test3();
+
+        // strict mode - строгий режим
+        // https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Strict_mode
+        // заставляет разработчика использовать более ограниченный синтаксис языка, который менее подвержен ошибкам
+
+    </script>
+</body>
+
+</html>

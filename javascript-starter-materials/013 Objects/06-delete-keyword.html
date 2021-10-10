@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Keyword</title>
+</head>
+
+<body>
+    <script>
+        let user = {
+            name: "admin",
+            email: "admin@example.com",
+            sayHello: function () {
+                console.log("Hello!");
+            }
+        };
+
+        console.log(user.name);
+        console.log(user.email);
+        console.log(user.foo); // при попытке обратиться к несуществующему свойству возвращается значение undefined
+
+        delete user.email; // удаление свойства email из объекта с именем user
+
+        console.log(user.name);
+        console.log(user.email); // undefined
+        console.log(user.foo);   // undefined
+    </script>
+</body>
+
+</html>

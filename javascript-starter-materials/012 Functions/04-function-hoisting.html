@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поднятие функций</title>
+</head>
+
+<body>
+    <script>
+        // funciton hoisting - поднятие функций, функцию можно использовать до ее определения.
+        // Интерпретатор, до выполнения скрипта, собирает информацию о всех функциях, которые были определены в сценарии.
+        // Идентификаторы (имена функций), будут доступны сразу, как только начнется выполнение сценария.
+        // Функции "поднимаются" в начала скрипта, поэтому мы можем их использовать до того, как они будут фактически объявлены в коде. 
+        hoistingTest();
+
+        function hoistingTest() {
+            var message = "hello";
+            console.log(message + " world");
+        }
+    </script>
+</body>
+
+</html>

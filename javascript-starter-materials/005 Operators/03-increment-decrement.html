@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инкремент</title>
+</head>
+
+<body>
+    <script>
+        let value = 10;
+
+        // инкремент, унарный оператор, который позволяет увеличить значение переменной на 1
+        console.log("инкремент");
+        value++; // value = value + 1;
+        console.log(value); // 11
+
+        console.log(++value); // (12) префиксная форма, оператор выполняет увеличение значения на 1 и возвращает новое значение
+        console.log(value++); // (12) постфиксная форма, оператор выполняет увеличение значения на 1 и возвращает старое значение
+        console.log(value);   // (13)
+
+        // декремент, унарный оператор, который позволяет уменьшить значение переменной на 1
+        console.log("декремент");
+        value = 10;
+        value--; // value = value - 1;
+        console.log(value); // 9
+
+        console.log(--value); // (8) префиксная форма, оператор выполняет уменьшение значения на 1 и возвращает новое значение
+        console.log(value--); // (8) постфиксная форма, оператор выполняет уменьшение значения на 1 и возвращает старое значение
+        console.log(value);   // (7)
+    </script>
+</body>
+
+</html>

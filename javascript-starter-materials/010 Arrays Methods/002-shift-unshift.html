@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Методы работы с началом массива</title>
+</head>
+
+<body>
+    <script>
+        let cities = ["London", "Paris", "Berlin", "Rome"];
+
+        // shift() - метод массива, который удаляет первый элемент массива и возвращает его
+        let first = cities.shift(); // удаляем первый элемент массива и записываем его в переменную last
+
+        console.log("shift result " + first);
+        for (let index = 0; index < cities.length; index++) {
+            console.log(cities[index]);
+        }
+
+        console.log("---------------------");
+
+        // unshift(<value>) - метод, который добавляет указанное значение в начало массива
+        cities.unshift("> Lisbon <");
+        for (let index = 0; index < cities.length; index++) {
+            console.log(cities[index]);
+        }
+    </script>
+</body>
+
+</html>

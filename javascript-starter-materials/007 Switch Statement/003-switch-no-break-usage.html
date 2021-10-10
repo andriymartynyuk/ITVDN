@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+
+<body>
+    <script>
+        // если ключевое слово break не используется, то инструкции продолжат выполняться ниже в следующих case
+        // обычно, блок case не использует break, когда для нескольких значений необходимо выполнить одни и те же инструкции 
+        let dayNumber = prompt("Введите номер дня недели:");
+
+        switch (dayNumber) {
+            case "1":
+            case "2":
+            case "3":
+            case "4":
+            case "5":
+                alert("Рабочий день недели");
+                break;
+            case "6":
+            case "7":
+                alert("Выходной день недели");
+                break;
+            default:
+                alert("Введено неправильное значение");
+                break;
+
+        }
+    </script>
+</body>
+
+</html>

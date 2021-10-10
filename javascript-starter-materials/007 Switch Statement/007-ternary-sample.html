@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тернарный оператор</title>
+</head>
+
+<body>
+    <script>
+        // Ниже используются конструкторы и методы. Темы, которые подробнее будут рассмотрены в следующих уроках и курсах.
+        let currentDate = new Date(); // создание переменной, в которой будет находиться объект, содержащий текущую дату
+        let day = currentDate.getDay(); // вызов на объекте метода getDay, который возвращает номер дня недели. 0 - воскресенье, 1 - понедельник и т.д.
+        let year = currentDate.getFullYear(); // вызов на объекте метода getFullYear, который возвращает текущий год.
+
+        console.log("Значение переменной day - " + day);
+        console.log("Значение переменной year - " + year);
+
+        let dayMessage = day == 0 || day == 6 ? "сегодня выходной" : "сегодня рабочий день"; // если номер дня 0 или 1 - выходной день, иначе - рабочий
+        let yearMessage = year % 4 == 0 ? "этот год високосный" : "этот год не високосный"; // если текущий год делится на 4 без остатка - високосный, иначе - нет
+
+        alert(dayMessage + "\r\n" + yearMessage);
+    </script>
+</body>
+
+</html>

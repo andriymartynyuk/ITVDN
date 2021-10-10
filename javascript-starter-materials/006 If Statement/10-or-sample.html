@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логическое ИЛИ (||)</title>
+</head>
+
+<body>
+    <script>
+        // Пример использования логического оператора ИЛИ (дизъюнкция)
+        let totalSum = 8000; // общая сумма покупок
+        let isClientBirthday = false; // true, если сегодня День Рождения клиента
+
+        let toPaySum = totalSum;
+        // Если сумма покупок более 900 ИЛИ сегодня у клиента День Рождения, применить скидку в 10%
+        if (totalSum > 900 || isClientBirthday == true) {
+            let discount = totalSum * 0.1;
+            toPaySum -= discount; //toPaySum = toPaySum - discount;
+        }
+        alert("Сумма к оплате " + toPaySum);
+    </script>
+</body>
+
+</html>

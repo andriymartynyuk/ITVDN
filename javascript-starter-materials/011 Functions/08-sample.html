@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возврат результата работы функции</title>
+</head>
+
+<body>
+    <script>
+        // пример функции, которая использует несколько return
+        function calculateArea(side1, side2, side3) {
+            // если нет значения для аргумента side1 или side2 - не выполняем расчетов, возвращаем undefined
+            if (side1 === undefined || side2 === undefined) {
+                return; // прекратить работу функции - возвращается результат undefined
+            }
+
+            // если не указана сторона 3, но есть сторона 1 и 2 - считаем площадь квадрата
+            if (side3 === undefined) {
+                return side1 * side2;
+            }
+            else {
+                // если указано три стороны - считаем площадь треугольника по формуле Герона
+                let p = (side1 + side2 + side3) / 2; // полупериметр треугольника 
+                return Math.sqrt(p * (p - side1) * (p - side2) * (p - side3)); // корень произведений разности полупериметра и каждой стороны
+            }
+        }
+
+        let result = calculateArea(10, 10);
+        console.log("Площадь квадрата " + result);
+
+        result = calculateArea(10, 10, 15);
+        console.log("Площадь треугольника " + result);
+
+        result = calculateArea(10);
+        console.log("Площадь фигуры " + result);
+    </script>
+</body>
+
+</html>

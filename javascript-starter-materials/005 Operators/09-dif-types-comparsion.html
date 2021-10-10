@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сравнение разных типов</title>
+</head>
+
+<body>
+    <script>
+        // При сравнении значений разных типов, для сравнения значения приводятся к числу
+        console.log('1' < 2); // true - значение '1' будет приведено к числу
+
+        console.log(false == 0); // true - значение false будет приведено к 0
+        console.log(true == 1); // true - значение true будет приведено к 1
+        console.log(null == undefined); // true - значение null будет приведено к 0, значение undefined будет приведено к 0
+        console.log('' == 0); // true - значение '' будет приведено к 0
+
+        // === - оператор строгого сравнения
+        // при строгом сравнении приведения к числу не происходит, если операнды оператора === разных типов - результат сравнения будет false
+        console.log(false === 0);
+        console.log(true === 1);
+        console.log(null === undefined);
+        console.log('' === 0);
+    </script>
+</body>
+
+</html>

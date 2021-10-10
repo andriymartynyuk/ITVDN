@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преобразования к строковому типу</title>
+</head>
+
+<body>
+    <script>
+        alert(123); // alert автоматически преобразовывает любое значенеи к строке
+
+        // Преобразование к строковому типу
+        let value = true; // тип данных boolean
+        console.log(typeof value);
+
+        // String - глобальный метод для создания строк 
+        let newValue = String(value); // переменная типа boolean в тип string
+        console.log(typeof newValue);
+        console.log(newValue);
+
+        // альтернативный способ преобразования к строковому типу
+        newValue = value.toString();
+        console.log(typeof newValue);
+
+    </script>
+</body>
+
+</html>

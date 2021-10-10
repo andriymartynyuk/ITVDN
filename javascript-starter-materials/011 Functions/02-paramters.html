@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameters</title>
+</head>
+
+<body>
+    <script>
+        // Определение функции с двумя параметрами (аргументами) - text и repeatCount 
+        function showMessage(text, repeatCount) {
+            for (let i = 0; i < repeatCount; i++) {
+                console.log(text);
+            }
+        }
+
+        // При вызове функции showMessage, мы можем первым значением инициализировать параметр с именем text,
+        // а вторым значением - repeatCount
+        showMessage("Hello world", 1);
+        showMessage("Привет мир", 2);
+    </script>
+</body>
+
+</html>

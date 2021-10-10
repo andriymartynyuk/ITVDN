@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>in operator</title>
+</head>
+
+<body>
+    <script>
+
+        let user1 = {
+            login: "admin",
+            email: "admin@example.com",
+            unsubscribeDate: undefined
+        }
+
+        // проверка наличия свойства в объекте
+        // При попытке прочесть несуществующее свойство возвращается значение undefined
+
+        if (user1.login) // наличие значения эквивалентно true
+        {
+            console.log("Свойство user1.login существует");
+        }
+        else {
+            console.log("Свойство user1.login не найдено");
+        }
+
+        if (user1.email !== undefined) // свойство отсутствует, если значение undefined
+        {
+            console.log("Свойство user1.email существует");
+        }
+        else {
+            console.log("Свойство user1.email не найдено");
+        }
+
+        // Проверка на значение undefined не подходит в тех ситуациях, когда свойство в объекте есть, но его значение было установлено как undefined
+        // Для таких ситуаций используется ключевое слово in
+        if (user1.unsubscribeDate !== undefined) {
+            console.log("Свойство user1.unsubscribeDate существует");
+        }
+        else {
+            console.log("Свойство user1.unsubscribeDate не найдено");
+        }
+
+        if ("unsubscribeDate" in user1) {
+            console.log("Свойство user1.unsubscribeDate существует");
+        }
+        else {
+            console.log("Свойство user1.unsubscribeDate не найдено");
+        }
+    </script>
+</body>
+
+</html>

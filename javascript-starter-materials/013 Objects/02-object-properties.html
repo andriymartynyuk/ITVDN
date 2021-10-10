@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+</head>
+
+<body>
+    <script>
+        // свойство - значение, которое хранится в объекте
+        let user = new Object();           // создание пустого объекта
+        // если несуществующему свойству присвоить значение, то это свойство будет создано в объекте
+        user.name = "admin";               // создание свойства name и присвоение значения admin
+        user.email = "admin@example.com";  // создание свойства email и присвоение значения admin@examle.com
+
+        console.log(user.name);
+        console.log(user.email);
+
+        user.email = "admin@itvdn.com";    // изменение значения свойства email
+
+        console.log(user.email);
+    </script>
+</body>
+
+</html>

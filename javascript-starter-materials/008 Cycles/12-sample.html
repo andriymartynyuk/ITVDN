@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for sample</title>
+</head>
+
+<body>
+    <script>
+        // простое число - натуральное число больше 1, которое делится без остатка только на себя и 1.
+
+        let n = 100;
+
+        prime:
+        for (let prime = 2; prime <= n; prime++) {
+            for (let index = 2; index < prime; index++) {
+                if (prime % index == 0) {
+                    continue prime;
+                }
+            }
+
+            console.log(prime + " простое число.");
+        }
+    </script>
+</body>
+
+</html>

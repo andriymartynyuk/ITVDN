@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ключевое слово var</title>
+</head>
+
+<body>
+    <script>
+        // Функция - представляет локальную область видимости. Переменная, созданная в функции через var, будет доступна во всей функции.
+        // При этом блочная область видимости не работает для переменных, созданных таким способом.
+        function functionScopeTest() {
+            var a = "first";
+
+            if (a != "") {
+                var b = "second";
+                console.log("1 " + a);
+                console.log("1 " + b);
+            }
+
+            console.log("2 " + a);
+            console.log("2 " + b); // переменная доступна, так как была создана с помощью var. Областью видимости переменной является функция.
+        }
+
+        functionScopeTest();
+    </script>
+</body>
+
+</html>

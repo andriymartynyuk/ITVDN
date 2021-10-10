@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>break and continue</title>
+</head>
+
+<body>
+    <script>
+        let sum = 0;
+        while (true) {
+            let value = prompt("Вводите числовые значения. Для выхода введите exit.")
+            if (value == "exit") {
+                break; // остановить работу цикла
+            }
+
+            let convertedValue = Number(value); // преобразование value в число 
+
+            // isNaN(convertedValue) - возвращает true, если в переменной converted находится значение NaN, иначе возвращает false
+            if (isNaN(convertedValue)) {
+                continue; // перейти на следующую итерацию цикла
+            }
+
+            sum += convertedValue;
+        }
+
+        alert("Сумма всех введенных числовых значений - " + sum);
+    </script>
+</body>
+
+</html>

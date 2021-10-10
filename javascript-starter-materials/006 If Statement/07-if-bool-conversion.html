@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Преобразование логических типов</title>
+</head>
+
+<body>
+    <script>
+        // false - Число 0, пустая строка "", null, undefined и NaN
+        // true - все остальные значения
+
+        let value;
+        value = 10 + 10;
+        value = 10 - 10;
+        value = "";
+        value = "hello world";
+        value = null;
+
+        if (value) {
+            console.log(`Блок if выполнился со значением ${value} в выражении.`);
+        }
+        else {
+            console.log(`Блок else выполнился со значением ${value} в выражении.`);
+        }
+    </script>
+</body>
+
+</html>

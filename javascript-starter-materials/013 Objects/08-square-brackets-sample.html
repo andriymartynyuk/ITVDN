@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Property with Square Brackets</title>
+</head>
+
+<body>
+    <script>
+        let user = {
+            name: "admin",
+            email: "admin@example.com",
+            sayHello: function () {
+                console.log("Hello!");
+            }
+        };
+
+        let propName = prompt("Значение какого свойства вывести - name, email, sayHello");
+
+        // в итоге будет обращение к свойству user["name"], user["email"], user["sayHello"]
+        alert(user[propName]);
+        // console.log(user.propName); - подобное обращение бессмысленно, так как свойства propName нет в объекте user
+
+    </script>
+</body>
+
+</html>

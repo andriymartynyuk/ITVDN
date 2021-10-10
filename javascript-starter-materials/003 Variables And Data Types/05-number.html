@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+
+<body>
+    <script>
+        // number - тип данных для хранения целочисленных значений и чисел с плавающей запятой. 
+        // диапазон number от -9,007,199,254,740,992‬ до 9,007,199,254,740,992
+        let x = 123;
+        let y = 1.23;
+
+        // над значениями переменной number можно выполнять разные арифметические опреации
+        let result;
+        result = x + y;      // сложение
+        console.log(result);
+
+        console.log(x - y);  // вычитание
+        console.log(x * y);  // умножение
+        console.log(x / y);  // деление
+
+        // Специальные значения типа number
+        // Infinity - специальное значение типа number, представляющее математическую бесконечность.
+        console.log(x / 0)
+
+        // NaN - Not a Number - значение, которое описывает вычеслительную ошибку.
+        let value; // значение переменной не определено
+        console.log(value + x); // нет возможности выполнить сложение неопределенного значения и числового значения. Результат NaN
+
+        // Любая операция, в которой используется NaN, возвращает результат NaN
+    </script>
+</body>
+
+</html>

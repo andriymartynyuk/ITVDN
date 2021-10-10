@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of Objects</title>
+</head>
+
+<body>
+    <script>
+        // вариант 1
+        let orders1 = [];
+        orders1.push({ product: "produc1", price: 10 });
+        orders1.push({ product: "produc2", price: 15 });
+        orders1.push({ product: "produc3", price: 20 });
+
+        // вариант 2
+        let orders2 = [];
+        orders2[0] = { product: "produc1", price: 10 };
+        orders2[1] = { product: "produc2", price: 15 };
+        orders2[2] = { product: "produc3", price: 20 };
+
+        // вариант 3
+        let orders3 = [
+            { product: "produc1", price: 10 },
+            { product: "produc2", price: 15 },
+            { product: "produc3", price: 20 },
+        ]
+
+        // цикл на количество элементов в массиве
+        for (let i = 0; i < orders3.length; ++i) {
+            let order = orders3[i]; // получение одного элемента массива - объекта со свойствами product и price
+            console.log(order.product);
+
+            // console.log(orders3[i].product); // 2 вариант
+        }
+    </script>
+</body>
+
+</html>

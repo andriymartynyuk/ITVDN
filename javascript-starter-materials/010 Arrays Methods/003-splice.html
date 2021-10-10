@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>splice</title>
+</head>
+
+<body>
+    <script>
+        let cities = ["London", "Paris", "Italy", "Berlin", "Rome"];
+
+        // splice(start, deleteCount, items...)
+        // start - индекс, с которого начать удалять элементы
+        // deleteCount - количество элементов для удаления
+        // items - значения, для добавления в массив, вместо удаленных
+
+        cities.splice(2, 1); // начиная с индекса 2 удалить 1 элемент
+        console.log(cities);
+
+        cities = ["London", "Paris", "Italy", "UK", "France", "Berlin", "Rome"];
+        cities.splice(2, 3); // начиная с индекса 2 удалить 3 элемента
+        console.log(cities);
+    </script>
+</body>
+
+</html>

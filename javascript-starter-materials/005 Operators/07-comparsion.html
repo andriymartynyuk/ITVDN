@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Операторы сравнения</title>
+</head>
+
+<body>
+    <script>
+        let x = 10;
+        let y = 15;
+
+        let result;
+
+        // результат сравнения имеет логический тип - boolean
+
+        result = x > y; // x больше чем y - нет, ложь/false
+        result = x < y; // x меньше чем y - да, истина/true
+        result = x == y; // x равен y - нет, ложь/false
+        result = x != y; // x не равен y - да, истина/true
+        result = x <= y; // x меньше или равен y - да, истина/true
+        result = x >= y; // x больше или равен y - нет, ложь/false
+
+        let value1 = 10; // тип number
+        let value2 = "10"; // тип string
+
+        result = value1 == value2; // true, если значения разных типов, происходит их конвертация к одному типу, после чего выполняется проверка
+        result = value1 === value2; // оператор идентичности, если значение разных типов, то они не равны, если значения одного типа - происходит проверка равенства
+    </script>
+</body>
+
+</html>
